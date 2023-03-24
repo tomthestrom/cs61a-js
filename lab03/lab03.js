@@ -12,6 +12,27 @@ const skipAdd = function (n) {
 	return n + skipAdd(n - 2);
 }
 
+/**
+ * First, pick a positive integer n as the start.
+ * If n is even, divide it by 2.
+ * If n is odd, multiply it by 3 and add 1.
+ * Repeat this process until n is 1.
+ * Write a recursive version of hailstone that prints out the values of the sequence
+ * and returns the number of steps. 
+ */
+const hailstone = function (n, count=0){
+	console.log(n)
+	if (n == 1) {
+		return count + 1
+	}
+	if (n % 2 == 0) {
+		return hailstone(n / 2, count + 1)
+	} else {
+		return hailstone((n * 3) + 1, count + 1)
+	}
+}
+
 module.exports = {
-	skipAdd
+	skipAdd,
+	hailstone
 }

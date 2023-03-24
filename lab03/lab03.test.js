@@ -8,7 +8,6 @@ test("Skip Add - Takes a number x and returns x + x-2 + x-4 + x-6 + ... + 0", ()
 })
 
 
-test("Print out the hailstone sequence starting at n, and return the
-    number of elements in the sequence.", () => {
+test("Print out the hailstone sequence starting at n, and return the number of elements in the sequence.", () => {
 	expect(hailstone(10)).toBe(7);
 })
