@@ -1,0 +1,14 @@
+{
+  "name": "cs61a-lab05",
+  "version": "1.0.0",
+  "description": "Lab 05 of CS61A SU19 - originally in Python.",
+  "main": "lab05.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
