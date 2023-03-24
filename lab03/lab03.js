@@ -4,9 +4,9 @@
  */
 const skipAdd = function (n) {
 	if (n <= 0) {
-		return 0
+		return 0;
 	} else if (n == 1) {
-		return 1
+		return 1;
 	}
 
 	return n + skipAdd(n - 2);
@@ -21,18 +21,32 @@ const skipAdd = function (n) {
  * and returns the number of steps. 
  */
 const hailstone = function (n, count=0){
-	console.log(n)
+	console.log(n);
 	if (n == 1) {
-		return count + 1
+		return count + 1;
 	}
 	if (n % 2 == 0) {
-		return hailstone(n / 2, count + 1)
+		return hailstone(n / 2, count + 1);
 	} else {
-		return hailstone((n * 3) + 1, count + 1)
+		return hailstone((n * 3) + 1, count + 1);
 	}
+}
+
+/**
+ * Write a recursive implementation of summation, which takes a positive integer n
+ * and a function term.
+ * It applies term to every number from 1 to n including n
+ * and returns the sum of the results.
+ */
+const summation = function (n, func) {
+	if (n == 1) {
+		return func(n);
+	}
+	return func(n) + summation(n - 1, func);
 }
 
 module.exports = {
 	skipAdd,
-	hailstone
+	hailstone,
+	summation
 }
