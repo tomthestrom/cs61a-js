@@ -3,6 +3,7 @@ const treeADT = require("./functional_tree.js");
 const tree = treeADT.tree;
 const merge = lab05.merge;
 const addChars = lab05.addChars;
+const acornFinder = lab05.acornFinder;
 
 test("Merges two sorted lists", () => {
 	expect(merge([1], [2])).toEqual([1, 2]);

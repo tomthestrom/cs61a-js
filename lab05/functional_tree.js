@@ -11,7 +11,7 @@ const label = function(tree) {
 
 const branches = function (tree) {
     /*"""Return the list of branches of the given tree."""*/
-    return tree.splice(1);
+    return tree[1];
 }
 
 const isLeaf = function(tree) {
@@ -19,7 +19,7 @@ const isLeaf = function(tree) {
     """Returns True if the given tree's list of branches is empty, and False
     otherwise.
     """*/
-    return !branches(tree)
+    return branches(tree).length == 0
 }
 
 module.exports = {
