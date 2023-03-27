@@ -19,7 +19,7 @@ const isLeaf = function(tree) {
     """Returns True if the given tree's list of branches is empty, and False
     otherwise.
     """*/
-    return branches(tree).length == 0
+    return !!branches(tree)?.length == 0
 }
 
 module.exports = {
