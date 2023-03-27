@@ -1,0 +1,14 @@
+{
+  "name": "cs61a-hw03",
+  "version": "1.0.0",
+  "description": "HW 03 of CS61A SU19 - originally in Python.",
+  "main": "hw03.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
