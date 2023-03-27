@@ -13,6 +13,9 @@ const flatten = function(lst) {
 	return flattened;
 }
 
+const flattenReduce = lst => lst.reduce((acc, element) => Array.isArray(element) ? acc.concat(flattenReduce(element)) : acc.concat(element), []);
+
 module.exports = {
-	flatten
+	flatten,
+	flattenReduce
 }
